@@ -58,5 +58,6 @@ gulp.task('inject', ['scripts'], function () {
     .pipe($.inject(injectStyles, injectOptions))
     .pipe($.inject(injectScripts, injectOptions))
     .pipe(wiredep(_.extend({}, conf.wiredep)))
+    .pipe(gulp.dest(conf.paths.src))
     .pipe(gulp.dest(path.join(conf.paths.tmp, '/serve')));
 });
