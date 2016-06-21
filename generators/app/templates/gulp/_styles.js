@@ -78,5 +78,6 @@ var buildStyles = function() {
 <% if (props.cssPreprocessor.key === 'ruby-sass') { -%>
     .pipe(cssFilter.restore)
 <% } -%>
-    .pipe(gulp.dest(path.join(conf.paths.tmp, '/serve/app/')));
+    .pipe(gulp.dest(path.join(conf.paths.tmp, '/serve/app/')))
+    .pipe(gulp.dest(path.join(conf.paths.src, '/app/')));
 };
