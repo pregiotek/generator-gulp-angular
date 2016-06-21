@@ -6,7 +6,7 @@
 [![NPM Version](http://img.shields.io/npm/v/generator-gulp-angular.svg?style=flat-square)](https://www.npmjs.org/package/generator-gulp-angular)
 [![Download Month](http://img.shields.io/npm/dm/generator-gulp-angular.svg?style=flat-square)](https://www.npmjs.org/package/generator-gulp-angular)
 
-> Yeoman generator for AngularJS + Gulp.
+> Yeoman generator for AngularJS + Gulp by PREGIOTEK.
 
 > Lets you quickly set up a project with:
 > * your favorite technologies
