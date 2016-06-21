@@ -1,12 +1,4 @@
-## Launching [Fountain](http://fountainjs.io/) generators beta
-
-The team is proud to present the next evolution of the Yeoman gulp-angular as a new project called [FountainJS](http://fountainjs.io/).
-
-It covers Angular 1 like today but go way farther with support for Angular 2, React, SystemJS and Webpack!
-
-Check it out right now at [http://fountainjs.io/](http://fountainjs.io/).
-
-# generator-gulp-angular ![Logo](generators/app/templates/src/assets/images/generator-gulp-angular-logo.png)
+# generator-gulp-angular-pregiotek ![Logo](generators/app/templates/src/assets/images/generator-gulp-angular-logo.png)
 
 [![Build Status](https://img.shields.io/travis/Swiip/generator-gulp-angular/master.svg?style=flat-square)](http://travis-ci.org/Swiip/generator-gulp-angular)
 [![Coverage Status](https://img.shields.io/codecov/c/github/Swiip/generator-gulp-angular.svg?style=flat-square)](http://codecov.io/github/Swiip/generator-gulp-angular?branch=master)
