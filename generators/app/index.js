@@ -21,7 +21,7 @@ var GulpAngularGenerator = yeoman.generators.Base.extend({
     this.version = pkg.version;
 
     this.insight = new Insight({
-      trackingCode: 'UA-66934495-2',
+      trackingCode: 'UA-XXX-X',
       pkg: pkg
     });
 
@@ -35,7 +35,7 @@ var GulpAngularGenerator = yeoman.generators.Base.extend({
     if (!this.options['skip-welcome-message']) {
       this.log(yosay(
         chalk.red('Welcome!') + '\n' +
-        chalk.yellow('You\'re using the fantastic generator for scaffolding an application with Angular and Gulp!')
+        chalk.yellow('You\'re using the fantastic generator for scaffolding an application with Angular and Gulp made by PREGIOTEK!')
       ));
     }
   }
