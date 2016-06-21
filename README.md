@@ -35,9 +35,9 @@ More informations, options, parameters in the [usage documentation page](docs/us
 npm install -g yo gulp bower
 ```
 
-##### Install `generator-gulp-angular`:
+##### Install `generator-gulp-angular-pregiotek`:
 ```
-npm install -g generator-gulp-angular
+npm install -g generator-gulp-angular-pregiotek
 ```
 
 
@@ -48,9 +48,9 @@ npm install -g generator-gulp-angular
 mkdir my-new-project && cd $_
 ```
 
-##### Run `yo gulp-angular`, and select desired technologies:
+##### Run `yo gulp-angular-pregiotek`, and select desired technologies:
 ```
-yo gulp-angular
+yo gulp-angular-pregiotek
 ```
 
 ## Documentation
