@@ -57,13 +57,13 @@ gulp.task('html', ['inject', 'partials'], function () {
     .pipe(cssFilter)
     // .pipe($.sourcemaps.init())
 <% if (props.ui.key === 'bootstrap' && props.cssPreprocessor.extension === 'scss') { -%>
-    .pipe($.replace('../<%- computedPaths.appToBower %>/bower_components/bootstrap-sass/assets/fonts/bootstrap/', '../fonts/'))
+    .pipe($.replace('../<%- computedPaths.appToBower %>/src/lib/bootstrap-sass/assets/fonts/bootstrap/', '../fonts/'))
 <% } else if (props.ui.key === 'bootstrap' && props.cssPreprocessor.extension === 'less') { -%>
-    .pipe($.replace('../<%- computedPaths.appToBower %>/bower_components/bootstrap/fonts/', '../fonts/'))
+    .pipe($.replace('../<%- computedPaths.appToBower %>/src/lib/bootstrap/fonts/', '../fonts/'))
 <% } else if (props.ui.key === 'bootstrap' && props.cssPreprocessor.extension === 'styl') { -%>
-    .pipe($.replace('../<%- computedPaths.appToBower %>/bower_components/bootstrap-stylus/fonts/', '../fonts/'))
+    .pipe($.replace('../<%- computedPaths.appToBower %>/src/lib/bootstrap-stylus/fonts/', '../fonts/'))
 <% } else if (props.ui.key === 'material-design-lite' || props.ui.key === 'angular-material') { -%>
-    .pipe($.replace('../<%- computedPaths.appToBower %>/bower_components/material-design-iconfont/iconfont/', '../fonts/'))
+    .pipe($.replace('../<%- computedPaths.appToBower %>/src/lib/material-design-iconfont/iconfont/', '../fonts/'))
 <% } -%>
     .pipe($.cssnano())
     .pipe($.rev())
@@ -98,9 +98,9 @@ gulp.task('images', function () {
 // Custom fonts are handled by the "other" task
 gulp.task('fonts', function () {
 <% if (props.ui.key === 'bootstrap' && props.cssPreprocessor.extension === 'styl') { -%>
-  return gulp.src($.mainBowerFiles().concat('bower_components/bootstrap-stylus/fonts/*'))
+  return gulp.src($.mainBowerFiles().concat('src/lib/bootstrap-stylus/fonts/*'))
 <% } else if (props.ui.key === 'material-design-lite' || props.ui.key === 'angular-material') { -%>
-  return gulp.src($.mainBowerFiles().concat('bower_components/material-design-iconfont/iconfont/*'))
+  return gulp.src($.mainBowerFiles().concat('src/lib/material-design-iconfont/iconfont/*'))
 <% } else { -%>
   return gulp.src($.mainBowerFiles())
 <% } -%>

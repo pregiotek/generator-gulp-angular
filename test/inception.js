@@ -28,7 +28,7 @@ function prepare(optionCase, promptCase) {
   return testDirectory(tempDir).then(function () {
     return Promise.all([
       fs.symlink(path.join(depsDir, 'node_modules'), path.join(tempDir, 'node_modules')),
-      fs.symlink(path.join(depsDir, 'bower_components'), path.join(tempDir, 'bower_components'))
+      fs.symlink(path.join(depsDir, 'src/lib'), path.join(tempDir, 'src/lib'))
     ]);
   }).then(function () {
     var gulpAngular = helpers.createGenerator(

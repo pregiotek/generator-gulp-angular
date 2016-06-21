@@ -1,6 +1,7 @@
 node_modules/
-bower_components/
+src/lib/
 coverage/
+src/lib/
 .sass-cache/
 .idea/
 <%- props.paths.tmp %>/
