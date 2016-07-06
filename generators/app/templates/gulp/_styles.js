@@ -24,7 +24,7 @@ var buildStyles = function() {
 <% if (props.cssPreprocessor.key === 'less') { -%>
   var lessOptions = {
     paths: [
-      'src/lib',
+      'bower_components',
       path.join(conf.paths.src, '/app')
     ],
     relativeUrls : true

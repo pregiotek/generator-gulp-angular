@@ -27,7 +27,7 @@ exports.wiredep = {
 <% if(wiredepExclusions.length > 0) { -%>
   exclude: [<%- wiredepExclusions.join(', ') %>],
 <% } -%>
-  directory: 'src/lib'
+  directory: 'bower_components'
 };
 
 /**
